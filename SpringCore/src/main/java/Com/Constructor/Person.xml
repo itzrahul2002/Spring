@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util 
+    http://www.springframework.org/schema/util/spring-util.xsd
+    ">
+    
+    	<bean class="Com.Constructor.Person" name="person">
+    		<constructor-arg value="101"/>
+    		<constructor-arg value="Ajay Sharma"/>
+    		<constructor-arg ref="certi"/>
+    	</bean>
+    	
+    	<bean class="Com.Constructor.Certificate" name="certi">
+    		<constructor-arg value="Java Developer"/>
+    		<constructor-arg value="34348"/>
+    	</bean>
+    	
+    	<bean class="Com.Constructor.Addition" name="add">
+    		<constructor-arg value="5" type="int" index="1"/>
+    		<constructor-arg value="70" type="int" index="0"/>
+    	</bean>
+    </beans>

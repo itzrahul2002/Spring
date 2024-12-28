@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util 
+    http://www.springframework.org/schema/util/spring-util.xsd 
+    http://www.springframework.org/schema/beans ">
+
+
+		<bean class="Com.Collection.Employee" name="emp">
+			<property name="EmpName" value="Ajay"></property>
+			<property name="phone">
+				<list>
+					<value>3454369945</value>
+					<value>8455465565</value>
+					<value>4687756456</value>
+					<value>4567678787</value>
+				</list>
+			</property>
+			
+			<property name="email">
+				<set>
+					<value>ajay@gmail.com</value>
+					<value>sonu@gmail.com</value>
+					<value>mukesh@gmail.com</value>
+					<value>looser@gmail.com</value>
+				</set>
+			</property>
+			
+			<property name="course">
+				<map>
+					<entry key="javaFullStack" value="24500"></entry>
+					<entry key="pythonFullStack" value="60344"></entry>
+					<entry key="mearn Stack" value="78677"></entry>
+					<entry key="php Developer" value="35766"></entry>
+				</map>
+			</property>
+		</bean>
+	
+</beans>

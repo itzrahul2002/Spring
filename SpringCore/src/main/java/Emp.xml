@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util 
+    http://www.springframework.org/schema/util/spring-util.xsd
+    ">
+
+
+<bean class="Spring.Employee" name="emp">
+
+    <property name="id">
+        <list>
+            <value>101</value>
+            <value>102</value>
+            <value>103</value>
+            <null/>
+        </list>
+    </property>
+    
+    <property name="uname" value="Ramu"/>
+
+    <property name="salary">
+        <list>
+            <value>120000</value>
+            <value>240000</value>
+            <value>780000</value>
+            <null/>
+        </list>
+    </property>
+    <property name="designation">
+        <map>
+            <entry key="Python" value="23"/>
+            <entry key="C++" value="45"/>
+            <entry key="Java" value="29"/>
+        </map>
+    </property>
+</bean>
+
+</beans>

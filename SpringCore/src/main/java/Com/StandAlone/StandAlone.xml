@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util 
+    http://www.springframework.org/schema/util/spring-util.xsd
+    ">
+    	
+    	<util:list list-class="java.util.LinkedList" id="frnd">
+    		<value>Ajay</value>
+    		<value>Vikaram</value>
+    		<value>SACHIN</value>
+    		<value>Vicky</value>
+    		<value>yash</value>
+    		<value>Null</value>
+    	</util:list>
+    	
+    	<util:list list-class="java.util.Vector" id="cnter">
+    		<value>Pritampura</value>
+    		<value>Kohat Enclave</value>
+    		<value>Shakurpur</value>
+    		<value>Nodia</value>
+    		<value>Bihar</value>
+    	</util:list>
+    	
+    	<util:map map-class="java.util.HashMap" id="course">
+    		<entry key="Java Full Satck" value="40000"/>
+    		<entry key="Mearn Stack" value="30000"/>
+    		<entry key="Python FullStack" value="20000"/>
+    	</util:map>
+    	
+    	<bean class="Com.StandAlone.Person" name="per">
+    		<property name="friends" ref="frnd"></property>
+    		<property name="fee" ref="course"></property>
+    		<property name="center" ref="cnter"></property>
+    	</bean>
+    </beans>
